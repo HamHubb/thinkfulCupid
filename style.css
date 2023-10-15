@@ -1,0 +1,317 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #6b1a22;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 15px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #a35766;
+  color: #ecdbc9;
+}
+
+main img {
+  width: 100px;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+
+  background-color: #83092e;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Tangerine", cursive;
+  font-size: 2rem;
+  color: #ecdbc9;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #ecdbc9;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Join Form ------- */
+form {
+  border: 2px solid #6b1a22;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #83092e;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #83092e;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+/* mobile */
+@media all and (max-width: 768px){
+  
+  header{
+
+    padding: 20px;
+  }
+
+  .logo {
+    font-family: "Tangerine", cursive;
+    font-size: 4rem;
+    color: #ecdbc9;
+  }
+
+  nav {
+    margin-bottom: 15px;
+
+  }
+
+  #menu {
+    display: flex;
+    justify-content: center;
+    gap: 0 10px;
+    margin-bottom: 10px;
+    
+  }
+    
+
+  
+  section img{
+    width: 100%;
+   
+  }
+  
+  fieldset {
+    margin: 20px 0;
+    border: none;
+    
+  }
+
+  fieldset legend{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .inputs > div {
+    display: flex;
+  }
+  
+
+  .inputs label{
+    font: 1rem;
+    flex: 1;
+  }
+
+
+  .inputs input {
+    flex: 1;
+    
+  }
+
+  #blog img{
+    width: 100%;
+  }
+  
+  #about img{
+    padding-bottom: 20px;
+  }
+
+  .blog-item img{
+    padding: 10px 0 10px 0;
+  }
+
+  .blog-item p{
+    padding-bottom: 10px;
+  }
+}
+
+/* Desktop */
+
+@media all and (min-width: 769px){
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  #menu{
+    display: flex;
+  }
+  
+  #join {
+    display: flex;
+    align-items: center;
+
+  }
+  #join img{
+    flex: 2;
+  }
+
+  #join fieldset{
+    flex: 1;
+  }
+
+  fieldset {
+    margin: 20px 0;
+    border: none;
+    
+  }
+
+  fieldset legend{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .inputs > div {
+    display: flex;
+  
+  }
+  
+  .inputs label{
+    font: 1rem;
+    flex: 1;
+  }
+
+  .inputs input {
+    
+    flex: 1;
+  }
+  #about div{
+    display: flex;
+    align-items: center;
+  }
+  
+  #about img{
+    flex: 1;
+    max-width: 25%;
+    
+  }
+
+  #about img{
+    padding-right: 10px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  #about  p {
+    flex: 1;
+    padding-left: 10px;
+  }
+
+  #download {
+    display: flex;
+    align-items: center;
+  }
+
+  #download div {
+    width: 50%;
+    margin: 0 10px 0 10px;
+  }
+  #download img{
+    width:50%;
+    margin-left: 10px;
+    
+  }
+
+  #blog p{
+    margin-bottom: 10px;
+  }
+
+  .rowBlog {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .blog-item {
+    padding: 0 20px 10px 20px;
+  }
+
+  .blog-item img{
+    padding: 10px 0 10px 0;
+  }
+
+  h2{
+    padding: 10px 0 15px 0;
+  }
+
+  #blog img{
+    width: 100%;
+  }
+  
+}
